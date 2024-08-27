@@ -10,7 +10,7 @@
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
@@ -30,7 +30,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/banner.png) right;
+  background: url(../img/fondo.png) right;
   background-size: cover;
 }
 
@@ -110,15 +110,23 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 #hero h1 {
-  margin: 30px 0 10px 0;
-  font-weight: 700;
+   font-weight: 700;
   line-height: 48px;
   text-transform: uppercase;
-  color: rgb(12, 12, 12);
+  color: #BE0811;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.colordiv{
+  background-color: #004894;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -130,14 +138,19 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   color: rgb(12, 12, 12);
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  letter-spacing: 6px;
+  color: #004894;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   #hero h2 .rotating {
     display: block;
@@ -149,16 +162,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .actions a {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 20px;
+  color: #fff;
   border-radius: 2px;
   transition: 0.5s;
-  margin: 0px;
+  margin: 20px;
+ 
 }
 
 #hero .btn-get-started {
@@ -168,9 +181,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #004894;
-  border: 0px solid #000;
-  color: #FFF;
+  border: 0px solid #fff;
+  color: #111;
 }
 
 #hero .btn-services {
@@ -179,9 +191,8 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 #hero .btn-services:hover {
-  background: #004894;
   border: 0px solid #FFF;
-  color: #FFF;
+  color: #111;
 }
 
 /*--------------------------------------------------------------
@@ -209,7 +220,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7f016', end
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Brush Script MT', cursive !important;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -269,6 +280,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7f016', end
 .nav-menu li {
   position: relative;
   white-space: nowrap;
+
 }
 
 .nav-menu > li {
@@ -327,8 +339,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7f016', end
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 20px;
   outline: none;
+}
+.home{
+  color: #fff
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
@@ -530,7 +545,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-title {
   color: #333;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 #about .about-text {
@@ -547,7 +562,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
   background-size: cover;
-  padding: 80px 0 60px 0;
+  padding: 80px 0 50px 0;
 }
 
 #services .service-item {
@@ -565,7 +580,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .service-icon i {
   color: #fff;
-  font-size: 24px;
+  font-size: 35px;
 }
 
 #services .service-item:hover .service-icon {
@@ -890,12 +905,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7f016', end
 
 #footer .copyright {
   text-align: center;
-  font-size: 8px;
+  font-size: 15px;
 }
 
 #footer .credits {
   padding-top: 10px;
   text-align: center;
-  font-size: 8px;
+  font-size: 15px;
   color: #ccc;
 }
